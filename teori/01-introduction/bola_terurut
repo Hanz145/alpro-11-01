@@ -1,0 +1,12 @@
+ALGORITMA: MENGURUT BOLA
+Nama: Reihan
+Langkah-Langkah:
+    1. ulangi sebanyak tiga kali
+        1. masukan tangan ke dalam kotak
+        2. ambil boka di dalam 
+    2. ulangi sebanyak tiga kali
+        1. jika bola pertama > bola ke dua
+            - pindahkan bola pertama dan kedua
+        2. jika bola ke dua > bola ke tiga
+            - pindahkan posisi bola ke dua dan ke tiga
+    3. bola selesai di keluarkan dan di urutkan
