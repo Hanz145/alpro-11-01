@@ -7,6 +7,12 @@ Langkah-Langkah:
     2. ulangi sebanyak tiga kali
         1. jika bola pertama > bola ke dua
             - pindahkan bola pertama dan kedua
-        2. jika bola ke dua > bola ke tiga
+            - langkah ke langkah mengurutkan bola ke dua dan ke tiga
+        2. jika bola pertama < bola ke dua
+            - langkah ke langkah mengurutkan bola ke dua dan ke tiga
+        3. jika bola ke dua > bola ke tiga
             - pindahkan posisi bola ke dua dan ke tiga
+            - selesai
+        4. jika bola ke dua < bola ke tiga
+            - selesai
     3. bola selesai di keluarkan dan di urutkan
