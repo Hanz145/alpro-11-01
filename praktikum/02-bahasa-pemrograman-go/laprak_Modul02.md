@@ -226,5 +226,5 @@ Berdasarkan praktikum 02-bahasa-pemrograman-go
 ## Referensi
 1. Fika Ridaul Maulayya. (2026). *Belajar Golang Dasar #4: Variable*. Diakses pada 27 September 2026 melalui https://santrikoding.com/belajar-golang-dasar-4-variable
 
-2.  MODUL 2 BAHASA PEMROGRAMAN GO 
+2.  MODUL 2 BAHASA PEMROGRAMAN GO melalui praktikum/02-bahasa-pemrograman-go/MODUL 2.pdf
 <!-- Tambahkan nomor referensi berikutnya sesuai kebutuhan -->

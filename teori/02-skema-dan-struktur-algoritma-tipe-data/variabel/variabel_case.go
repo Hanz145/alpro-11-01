@@ -18,4 +18,5 @@ func main() {
 	)
 	fmt.Println("nama lengkap:", fullname)
 	fmt.Println("Nama depan: ", firstname)
+
 }

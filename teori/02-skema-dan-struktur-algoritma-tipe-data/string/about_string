@@ -1,0 +1,2 @@
+String di Go adalah tipe data yang merepresentasikan urutan byte bersifat read-only
+(hanya bisa dibaca) dan biasanya dikodekan dalam format UTF-8
