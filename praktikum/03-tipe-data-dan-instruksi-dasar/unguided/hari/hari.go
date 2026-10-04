@@ -11,8 +11,8 @@ func main() {
 	sisa = hari % 365
 	bulan = sisa / 30
 	sisa = sisa % 30
-	minggu = sisa / 4
-	sisa = sisa % 4
+	minggu = sisa / 7
+	sisa = sisa % 7
 	fmt.Println("====== Konverenis ke Tahun, Bulan, Minggu ======")
 	fmt.Println("Tahun : ", tahun)
 	fmt.Println("Bulan : ", bulan)
