@@ -1,47 +1,18 @@
 # <h1 align="center">Laporan Praktikum Modul [Nomor Modul] - [Judul Modul/Topik]</h1>
-<p align="center">Reihan - 109092600002</p>
+<p align="center">[Nama Praktikan] - [NIM]</p>
 
 ## Dasar Teori
 
 ### A. Tipe Data Dan Instruksi
-Tipe data adalah konsep penting dalam pemrograman. Tipe data menentukan ukuran dan jenis nilai variabel.
-Go menggunakan pengetikan statis, yang berarti bahwa setelah tipe variabel didefinisikan, variabel tersebut hanya dapat menyimpan data dengan tipe tersebut.
-Go memiliki tiga tipe data dasar.
+[Tuliskan penjelasan teori terkait topik ini. Sertakan kutipan/rujukan jika perlu, contoh: Menurut [Nama Penulis] ([Tahun]), ...]
 
-#### 1. Boolean
-Boolean adalah tipe data yang hanya bisa menyimpan nilai suatu variabel berupa `true` atau `false`
-```go
-package main
+### B. [Judul Topik Dasar Teori 2, misal: Package dan Struktur Program di Go]
 
-import "fmt"
+#### 1. [Judul Sub-topik 1, misal: Pengertian Package main dan func main()]
+[Penjelasan sub-topik 1]
 
-func main(){
-    //menyimpan variabel a berupa true
-    var a bool = true
-    //output
-    fmt.Print(a)
-}
-```
-
-#### 2. Numerik
-Adalah Tipe data yang bisa menyimpan nilai berupa bilangan. Bisa bilangan bulat maupun bilangan real
-```go
-package main
-
-import "fmt"
-
-func main(){
-    //menyimpan variabel a berupa bilangan bulat
-    var a int
-    //menyimpan variabel b berupa bilangan real
-    var b float64
-    //output
-    fmt.Print(a)
-    fmt.Print(b)
-}
-```
-
-#### 2. String
+#### 2. [Judul Sub-topik 2, misal: Tipe Data dan Deklarasi Variabel di Go]
+[Penjelasan sub-topik 2]
 
 <!-- Tambahkan poin A, B, C, ... atau sub-topik 1, 2, 3, ... sesuai kebutuhan modul -->
 
@@ -57,16 +28,14 @@ import "fmt"
 func main() {
 	var uang int
 	fmt.Print("Uang = ")
-    //input
 	fmt.Scan(&uang)
-    //penyelesaian
+
 	sepuluh := uang / 10000
 	sisa := uang % 10000
 	lima := sisa / 5000
 	sisa = sisa % 5000
 	satu := sisa / 1000
 	sisa = sisa % 1000
-    //output
 	fmt.Println("10000 = ", sepuluh)
 	fmt.Println("5000 = ", lima)
 	fmt.Println("1000 = ", satu)
@@ -139,7 +108,7 @@ func main() {
 
 ##### Output
 <!-- Path relatif dari readme.md ke folder unguided/[nama_soal]/output.png, contoh: -->
-![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/03-tipe-data-dan-instruksi-dasar/unguided/suhu/output.png?raw=true)
+![Screenshot Output Unguided](https://github.com/renwxyz/alpro-11-01/blob/main/praktikum/02-bahasa-pemrograman-go/unguided/cacahuang/output.png)
 
 
 #### Deskripsi
@@ -173,7 +142,7 @@ func main() {
 ```
 
 ##### Output
-![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/03-tipe-data-dan-instruksi-dasar/unguided/hari/output.png?raw=true)
+![Screenshot Output Unguided](unguided/[nama_soal]/output.png)
 
 #### Deskripsi
 [Tuliskan ringkasan proses praktikum: apa yang dikerjakan, bagian guided dan unguided yang diimplementasikan, serta hasil yang diperoleh.]
