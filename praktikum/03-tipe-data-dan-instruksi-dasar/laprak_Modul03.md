@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul [Nomor Modul] - [Judul Modul/Topik]</h1>
+# <h1 align="center">Laporan Praktikum Modul 03-Tipe-Data-Dan-Instruksi-Dasar</h1>
 <p align="center">Reihan - 109092600002</p>
 
 ## Dasar Teori
