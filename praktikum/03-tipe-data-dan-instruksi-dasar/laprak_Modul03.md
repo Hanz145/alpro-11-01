@@ -32,9 +32,9 @@ import "fmt"
 
 func main(){
     //menyimpan variabel a berupa bilangan bulat
-    var a int
+    var a int = 2
     //menyimpan variabel b berupa bilangan real
-    var b float64
+    var b float64 = 2.5
     //output
     fmt.Print(a)
     fmt.Print(b)
@@ -42,6 +42,22 @@ func main(){
 ```
 
 #### 2. String
+Adalah Tipe data yang bisa menyimpan nilai berupa string. Bisa berupa kalimat, maupun satu karakter
+```go
+package main
+
+import "fmt"
+
+func main(){
+    //menyimpan variabel a berupa bilangan bulat
+    var a string = "suki"
+    //menyimpan variabel b berupa bilangan real
+    var b rune = "suki"
+    //output
+    fmt.Print(a)
+    fmt.Print(b)
+}
+```
 
 <!-- Tambahkan poin A, B, C, ... atau sub-topik 1, 2, 3, ... sesuai kebutuhan modul -->
 
@@ -74,7 +90,7 @@ func main() {
 }
 ```
 #### Deskripsi
-[Tuliskan ringkasan proses praktikum: apa yang dikerjakan, bagian guided dan unguided yang diimplementasikan, serta hasil yang diperoleh.]
+Kode program di atas membantu mencari cacah uang. Mencari berapa banyak uang (10k, 5k, 1k) Rupiah, dan sisa uang dengan cara membagi dan memodul total uang 
 
 ### 2. konversi.go
 
@@ -93,7 +109,7 @@ func main() {
 
 ```
 #### Deskripsi
-[Tuliskan ringkasan proses praktikum: apa yang dikerjakan, bagian guided dan unguided yang diimplementasikan, serta hasil yang diperoleh.]
+Kode di atas berfungsi mengkonversi suhu dengan satuan celcius ke ke satuan kelvin menggunakan variabel float
 
 ### 3. tukar.go
 
@@ -113,8 +129,7 @@ func main() {
 }
 ```
 #### Deskripsi
-[Tuliskan ringkasan proses praktikum: apa yang dikerjakan, bagian guided dan unguided yang diimplementasikan, serta hasil yang diperoleh.]
-
+Kode di atas berfungsi untuk menukarkan tiga nilai variabel sesuat urutan yang di inginkan. `x, y, z` ke `z, y, x`
 <!-- Tambahkan blok file/kode lain sesuai jumlah file pada soal guided -->
 
 ## Unguided
@@ -138,14 +153,13 @@ func main() {
 ```
 
 ##### Output
-<!-- Path relatif dari readme.md ke folder unguided/[nama_soal]/output.png, contoh: -->
 ![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/03-tipe-data-dan-instruksi-dasar/unguided/suhu/output.png?raw=true)
 
 
 #### Deskripsi
-[Tuliskan ringkasan proses praktikum: apa yang dikerjakan, bagian guided dan unguided yang diimplementasikan, serta hasil yang diperoleh.]
+Kode di atas bisa mengkonversi suhu dengan satuan celcius ke reamur dengan cara `4.0 / 5.0 * suhu celcius`
 
-### 2. Membuat sebuah program dalam bahasa Go yang dapat mengonversi jumlah hari ke dalam satuan tahun, bulan, minggu, dan hari,
+### 2. Membuat sebuah program dalam bahasa Go yang dapat mengonversi jumlah hari ke dalam satuan tahun, bulan, minggu, dan hari
 
 ```go
 package main
@@ -176,15 +190,14 @@ func main() {
 ![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/03-tipe-data-dan-instruksi-dasar/unguided/hari/output.png?raw=true)
 
 #### Deskripsi
-[Tuliskan ringkasan proses praktikum: apa yang dikerjakan, bagian guided dan unguided yang diimplementasikan, serta hasil yang diperoleh.]
+Pada kode di atas kita bisa tau berapa tahun, bulan, dan minggu jika kita memasukan jumlah hari. dengan cara membagi dan memodul jumlah hari yang di masukan dengan banyak nya hari yang ada di dalam satu tahun, bulan, dan minggu
 
 <!-- Duplikasi blok "### [nama_soal]" sesuai jumlah folder soal di dalam unguided -->
 
 
 ## Kesimpulan
-[Tuliskan kesimpulan yang menjawab tujuan praktikum berdasarkan hasil yang diperoleh.]
+Berdasarkan 03-tipe-data-dan-instruksi-dasar, saya bisa mempelajari cara mengkonversi, menggunakan modul, dan memindahkan nilai suatu variabel ke variabel lain nya di dalam Golang
 
 ## Referensi
-1. [Nama Penulis]. ([Tahun]). *[Judul Buku/Sumber]*. [Kota]: [Penerbit]. Diakses pada [tanggal akses] melalui [tautan/DOI]
-2. [Nama Penulis]. ([Tahun]). *[Judul Buku/Sumber]*. [Kota]: [Penerbit]. Diakses pada [tanggal akses] melalui [tautan/DOI]
+1. *w3schools*. Diakses pada 7 Oktober 2026 melalui https://www.w3schools.com/go/
 <!-- Tambahkan nomor referensi berikutnya sesuai kebutuhan -->

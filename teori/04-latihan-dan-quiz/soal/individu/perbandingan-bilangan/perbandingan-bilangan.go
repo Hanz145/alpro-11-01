@@ -9,7 +9,7 @@ func main() {
 	fmt.Scan(&a)
 	fmt.Print("Masukkan bilangan kedua: ")
 	fmt.Scan(&b)
-	fmt.Print(a>b)
-	fmt.Print(a==b)
-	fmt.Print(a<b)
+	fmt.Println(a>b)
+	fmt.Println(a==b)
+	fmt.Println(a<b)
 }
