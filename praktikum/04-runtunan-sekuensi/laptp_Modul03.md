@@ -19,13 +19,13 @@ func main(){
 
 ##### Output
 <!-- Path relatif dari readme.md ke folder unguided/[nama_soal]/output.png, contoh: -->
-![alt text](image.png)
+![alt text](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/04-runtunan-sekuensi/tp/Evaluasi-Ekspresi-Kontrol-dalam-Go/output.png?raw=true)
 
 
 #### Deskripsi
 Mengecek apakah variabel `intNum` tidak sama dengan lebih dari tiga atau kurang dari samadengan lima.
 
-### 2. Boolean
+### 2. Switch Case
 
 ```go
 package main
@@ -54,28 +54,47 @@ func main() {
 
 ##### Output
 <!-- Path relatif dari readme.md ke folder unguided/[nama_soal]/output.png, contoh: -->
-![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/03-tipe-data-dan-instruksi-dasar/tp/bool/output.png?raw=true)
+![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/04-runtunan-sekuensi/tp/Switch-Case/outout.png?raw=true)
 
 
 #### Deskripsi
 Dari kode di atas kita bisa tau apakah bilangan yang kita masukan Lebih dari sepuluh, kurang dari sama dengan 25, atau == 10
 
-### 2. Boolean
+### 3. Tracing Evaluasi Pernyataan Kondisi
 
 ```go
 package main
-
-import "fmt"
-
-func main() {
-	var mil float64
-	var km float64
-	//input
-	fmt.Printf("Mil : ")
-	fmt.Scan(&mil)
-	//proses
-	km = mil * 1.6
-	fmt.Printf("km : ", km)
+import "fmt"  
+func main() { 
+	x := 10 
+	y := 5 
+	z := 15 
+	result := 0
+	if x > 5 {	
+		if y < 10 {
+			result = x + y 
+		} else {
+			result = x - y
+		}
+	}
+	if z > 10 && x == 10 {
+		result += z
+	} else {
+		result = z - x 
+	}
+	if x == 10 || y > 10 {
+		result += 5
+	} else if y == 5 && z > 10 {
+		result -= 5
+	} else {
+		result *= 2
+	}
+	if !(x < 15 && y < 10) {
+		result += 10
+	} else {
+		result -= 10
+	}
+	fmt.Println("Nilai akhir result:", result)
 }
 ```
 
