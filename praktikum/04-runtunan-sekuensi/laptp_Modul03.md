@@ -105,5 +105,51 @@ func main() {
 #### Deskripsi
 Kode di atas menampilkan hasil sesuai kondisi yang terpenuhi menggunakan `if` dan `else`
 
+### 4. menentukan Jumlah Hari dalam Sebulan
+
+```go
+package main
+
+
+import "fmt"
+
+
+func main (){
+	var tiga0 int = 30
+	var tiga1 int = 31
+	var feb int = 28
+	var kab int = 29
+	var tahun int
+	var bulan string
+	fmt.Println("====== Masukan Tahun dan bulan ======")
+	fmt.Print("tahun: "); fmt.Scan(&tahun)
+	fmt.Print("bulan: "); fmt.Scan(&bulan)
+	if tahun % 4 == 0 {
+		if bulan == "Jan" || bulan == "Mar" || bulan == "Mei" || bulan == "Jul"|| bulan == "Aug" || bulan == "Okt" || bulan == "Des" {
+			fmt.Print("hari: ",tiga1) 
+		} else if bulan == "Apr" || bulan == "Jun" || bulan == "Sep" || bulan == "Nov"  {
+			fmt.Print("hari: ",tiga0) 
+		} else if bulan == "Veb" {
+			fmt.Print("hari: ",kab)
+		}
+	} else {
+		if bulan == "Jan" || bulan == "Mar" || bulan == "Mei" || bulan == "Jul"|| bulan == "Aug" || bulan == "Okt" || bulan == "Des" {
+			fmt.Print("hari: ",tiga1) 
+		} else if bulan == "Apr" || bulan == "Jun" || bulan == "Sep" || bulan == "Nov"  {
+			fmt.Print("hari: ",tiga0) 
+		} else if bulan == "Veb" {
+			fmt.Print("hari: ",feb)
+		}
+	}
+}
+```
+
+##### Output
+<!-- Path relatif dari readme.md ke folder unguided/[nama_soal]/output.png, contoh: -->
+![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/04-runtunan-sekuensi/tp/menentukan-Jumlah-Hari-dalam-Sebulan/output.png?raw=true)
+
+#### Deskripsi
+Kode di atas menampilkan berapa banyak hari sesuai bulan dan tahun kabisat dengan akurat
+
 ## Kesimpulan
 tujuan praktikum bertujuan untuk mengetahui cara menggunakan `if`, `else`, dan `switch case`
