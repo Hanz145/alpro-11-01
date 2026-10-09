@@ -12,7 +12,7 @@ func main() {
 	switch {
 	case bilangan > 10:
 		fmt.Println("Bilangan lebih besar dari 10")
-	case bilangan > 25:
+	case bilangan <= 25:
 		fmt.Println("Bilangan lebih kecil atau sama dengan 25")
 	case bilangan == 10:
 		fmt.Println("Bilangan sama dengan 10")

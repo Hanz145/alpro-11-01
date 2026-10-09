@@ -1,4 +1,4 @@
-# <h1 align="center">Tugas Pendahuluan Modul [Nomor Modul] - [Judul Modul/Topik]</h1>
+# <h1 align="center">Tugas Pendahuluan Modul 03 - tipe data dan instruksi dasar</h1>
 <p align="center">Reihan - 109092600002</p>
 
 ### 1. Sisa Kue
@@ -56,7 +56,7 @@ func main() {
 #### Deskripsi
 Dari kode di atas kita tahu cara menggunakan variabel `bool` dengan baik dan benar.
 
-### 2. Boolean
+### 3. Float
 
 ```go
 package main
