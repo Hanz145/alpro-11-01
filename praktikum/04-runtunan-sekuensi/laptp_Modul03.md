@@ -102,5 +102,8 @@ func main() {
 <!-- Path relatif dari readme.md ke folder unguided/[nama_soal]/output.png, contoh: -->
 ![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/04-runtunan-sekuensi/tp/Tracing-Evaluasi_Pernyataan_Kondisi/output.png?raw=true)
 
+#### Deskripsi
+Kode di atas menampilkan hasil sesuai kondisi yang terpenuhi menggunakan `if` dan `else`
+
 ## Kesimpulan
-tujuan praktikum bertujuan untuk mengetahui cara mengkonverensi, menemukan hasil bagi, dan menentukan true dan false di dalam go lang
+tujuan praktikum bertujuan untuk mengetahui cara menggunakan `if`, `else`, dan `switch case`
