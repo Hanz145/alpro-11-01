@@ -225,7 +225,7 @@ func main() {
 }
 ```
 ##### Output
-![Screenshot Output Unguided]()
+![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/04-runtunan-sekuensi/unguided/grade-case/output.png?raw=true)
 
 #### Deskripsi
 Kode di atas hanyalah modifikasi dari `grade.go` namun yang ini menggunakan switch case. secara fungsi sama
@@ -268,7 +268,7 @@ func main (){
 ```
 
 ##### Output
-![Screenshot Output Unguided]()
+![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/04-runtunan-sekuensi/unguided/tax/output.png?raw=true)
 
 #### Deskripsi
 Kode di atas berfungsi untuk menghitung seberapa banyak pajak yang harus di bayar seseorang sesuai banyak nya uang yang di dapat dan menghitung nya di dalam kode pemrograman
