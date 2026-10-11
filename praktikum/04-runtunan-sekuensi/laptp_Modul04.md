@@ -100,7 +100,7 @@ func main() {
 
 ##### Output
 <!-- Path relatif dari readme.md ke folder unguided/[nama_soal]/output.png, contoh: -->
-![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/04-runtunan-sekuensi/tp/Tracing-Evaluasi_Pernyataan_Kondisi/output.png?raw=true)
+![Screenshot Output Unguided](https://raw.githubusercontent.com/Hanz145/alpro-11-01/refs/heads/main/praktikum/04-runtunan-sekuensi/tp/Tracing-Evaluasi_Pernyataan_Kondisi/output.png)
 
 #### Deskripsi
 Kode di atas menampilkan hasil sesuai kondisi yang terpenuhi menggunakan `if` dan `else`
