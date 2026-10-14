@@ -22,7 +22,7 @@ func main(){
 
 ##### Output
 <!-- Path relatif dari readme.md ke folder unguided/[nama_soal]/output.png, contoh: -->
-![alt text](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/04-runtunan-sekuensi/tp/Evaluasi-Ekspresi-Kontrol-dalam-Go/output.png?raw=true)
+![alt text](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/05-perulangan-for-loop/tp/Soal-No3/z.output.png?raw=true)
 
 
 #### Deskripsi
@@ -51,11 +51,11 @@ func main(){
 
 ##### Output
 <!-- Path relatif dari readme.md ke folder unguided/[nama_soal]/output.png, contoh: -->
-![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/04-runtunan-sekuensi/tp/Switch-Case/outout.png?raw=true)
+![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/05-perulangan-for-loop/tp/Soal-No4/z.%20output.png?raw=true)
 
 
 #### Deskripsi
 Mengkalikan var `a` hingga mencapai variabel `b` mulai dari `a x 1`
 
 ## Kesimpulan
-tujuan praktikum bertujuan untuk mengetahui cara menggunakan `if`, `else`, dan `switch case`
+Tujuan pendahuluan kali ini untuk mengetahui bagaimana cara nya menggunakan `for` atau perulangan, apa itu perulangan di dalam go, dan apa fungsi dan manfaat perulangan di go
