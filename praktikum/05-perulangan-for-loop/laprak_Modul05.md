@@ -41,6 +41,36 @@ func main(){
 Kode di atas menampilkan jumlah tabungan yang terkumpul sesuai hari yang di tentukan. Pertama kita di suruh menginput `a` adalah tabungan hari pertama, `b` adalah yang akan di tabung setiap hari, dan `c` adalah berapa hari kita akan menabung. Output akan menampilkan jumlah tabungan di hari yang telah di input.
 
 ### 2. terbesar.go
+
+```go
+package main
+
+import "fmt"
+
+func main(){
+	var n int
+	fmt.Scan(&n)
+
+	var angka, max int
+	fmt.Scan(&angka)
+	max = angka
+
+	for i := 2; i <= n; i++{
+		fmt.Scan(&angka)
+
+		if angka > max {
+			max = angka
+		}
+	}
+	fmt.Print(max)
+}
+```
+
+#### Deskripsi
+Kode di atas berfungsi untuk menampilkan bilangan terbesar dari sejumlah bilangan yang telah di input.
+
+
+### 3. Bioskop
 ```go
 package main
 
