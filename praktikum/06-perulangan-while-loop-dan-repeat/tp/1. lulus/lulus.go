@@ -9,7 +9,7 @@ func main(){
 	for {
 		fmt.Print("Masukan Nilai: ")
 		fmt.Scan(&nilai)
-		if nilai >= 60 && nilai < -101{
+		if nilai >= 60 && nilai < 101{
 			fmt.Println("Anda lulus ujian")
 		} else if nilai < 60 && nilai > -1{
 			fmt.Println("Anda tidak lulus ujian")

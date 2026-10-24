@@ -3,12 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	var tahun int
-	var bawal int = 10000000
-	total
-	loop := 0
-	fmt.Scan(&tahun)
-	for loop <= n{
-		
-	}
+    var n int
+    fmt.Scan(&n)
+
+    var biaya float64 = 10000000.0
+    var i int = 1
+    for i < n {
+        biaya = biaya * 1.06
+        i++
+    }
+    fmt.Printf("%.0f\n", biaya)
 }
