@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul 05-Perulangan-For-Loop</h1>
+# <h1 align="center">Laporan Praktikum Modul 06-Perulangan-While-Loop-dan-Repeat</h1>
 <p align="center">Reihan - 109092600002</p>
 
 ## Dasar Teori
@@ -16,29 +16,28 @@ adalah pernyataan yang dieksekusi di akhir setiap iterasi. Berfungsi untuk mengu
 
 ## Guided
 
-### 1. tabungan.go
+### 1. terkecil.go
 
 ```go
 package main
 
 import "fmt"
 
-func main(){
-	var a, b, n int
-	fmt.Scan(&a, &b, &n)
-	total := 0
-	tabunganhariini := a
+func main() {
+    var batas int
+    fmt.Scan(&batas)
 
-	for i := 1; i <= n; i++{
-		total = total + tabunganhariini
-		tabunganhariini = tabunganhariini + b
-	}
-	fmt.Print(total)
+    n := 1
+    for n*n*n <= batas {
+        n++
+    }
+
+    fmt.Println(n)
 }
 ```
 
 #### Deskripsi
-Kode di atas menampilkan jumlah tabungan yang terkumpul sesuai hari yang di tentukan. Pertama kita di suruh menginput `a` adalah tabungan hari pertama, `b` adalah yang akan di tabung setiap hari, dan `c` adalah berapa hari kita akan menabung. Output akan menampilkan jumlah tabungan di hari yang telah di input.
+Kode Go tersebut bertujuan untuk mencari nilai $n$ terkecil sedemikian sehingga $n^3 > \text{batas}$ (atau dengan kata lain, $n$ adalah bilangan bulat terkecil yang kubiknya melebihi batas).
 
 ### 2. terbesar.go
 
@@ -47,109 +46,55 @@ package main
 
 import "fmt"
 
-func main(){
-	var n int
-	fmt.Scan(&n)
+func main() {
+    var batas int
+    fmt.Scan(&batas)
 
-	var angka, max int
-	fmt.Scan(&angka)
-	max = angka
+    n := 1
+    for n*n < batas {
+        n++
+    }
 
-	for i := 2; i <= n; i++{
-		fmt.Scan(&angka)
-
-		if angka > max {
-			max = angka
-		}
-	}
-	fmt.Print(max)
+    fmt.Println(n - 1)
 }
 ```
 
 #### Deskripsi
-Kode di atas berfungsi untuk menampilkan bilangan terbesar dari sejumlah bilangan yang telah di input.
+Program tersebut adalah program sederhana untuk mencari akar kuadrat bulat ke bawah dari suatu angka yang diinputkan oleh pengguna (batas).
 
 
-### 3. Bioskop
+### 3. Vokal
 ```go
 package main
 
-import "fmt"
+import (
+    "bufio"
+    "fmt"
+    "os"
+    "strings"
+)
 
 func main() {
+    reader := bufio.NewReader(os.Stdin)
+    kalimat, _ := reader.ReadString('\n')
 
-	var hari, tiket string // var hari sama jenis tiket
-	var pesanan, total, jmlhtiket int // var banyak nya pesanan dan total harga pesanan
-	fmt.Println("Silahkan Pesan tiket bioskop yang kamu mau")
-	fmt.Println("==========================")
-	fmt.Println("Reguler = 40000")
-	fmt.Println("3D = 60000")
-	fmt.Println("IMAX = 80000")
-	fmt.Println("Jumat - Minggu = +10000")
-	fmt.Println("==========================")
-	fmt.Println("diskon 10% jika membeli 5 tiket dalam sehari")
-	fmt.Println("jika ada kesalahan dalam memasukan hari, maka hari = Senin")
-	fmt.Println("jika ada kesalahan dalam nama tiket, maka tiket = Reguler")
-	fmt.Println("jika ada kesalahan dalam memasukan jumlah tiket, maka tiket = 1")
-	fmt.Print("Banyak Pesanan: ")
-	fmt.Scan(&pesanan)// berapa banyak tiket yang akan di pesan
-	loop := 0 //var pengatur loop
-	fmt.Print("\n ")
+    i := 0
+    jumlahVokal := 0
 
+    for i < len(kalimat) {
+        ch := strings.ToLower(string(kalimat[i]))
+        if ch == "a" || ch == "i" || ch == "u" || ch == "e" || ch == "o" {
+            jumlahVokal++
+        }
+        i++
+    }
 
-	for { // loop utama
-		fmt.Println("====== Tiket ======")
-		fmt.Print("Jenis Tiket: ")
-		fmt.Scan(&tiket)
-		fmt.Print("Hari (diawali kapital): ")
-		fmt.Scan(&hari)
-		fmt.Print("Jumlah Tiket: ")
-		fmt.Scan(&jmlhtiket)
-		hargatiket := 0 //menampilkan harga sesuai jenis tiket
-
-		//mengecek harga tiket
-		if tiket == "IMAX"{
-			hargatiket = 80000
-		} else if tiket == "3D" {
-			hargatiket = 60000
-		} else {
-			hargatiket = 40000
-		}
-
-		//mengecek hari
-		if hari == "Jumat" || hari == "Sabtu" || hari == "Minggu" {
-			hargatiket += 10000
-		} else if hari == "Senin" || hari == "Selasa" || hari == "Rabu" || hari == "Kamis" {
-			hargatiket += 0
-		} else {
-			hargatiket += 0
-		}
-
-		//mengecek jumlah tiket
-		if jmlhtiket >= 5 {
-			fmt.Println("Harga: ",hargatiket * jmlhtiket - (hargatiket * jmlhtiket) * 10/100,"\n ")
-			total = total + hargatiket * jmlhtiket - (hargatiket * jmlhtiket) * 10/100
-		} else if jmlhtiket < 5 && jmlhtiket > 0 {
-			fmt.Println("Harga: ",hargatiket * jmlhtiket,"\n ")
-			total = total + hargatiket * jmlhtiket
-		} else {
-			fmt.Println("Harga: ",hargatiket * 1,"\n ")
-			total = total + hargatiket * 1
-		}
-
-		loop++
-
-		if loop == pesanan {// break
-			break
-		}
-	}
-	fmt.Println("Total Harga",total)// total
+    fmt.Println(jumlahVokal)
 }
 ```
 
 #### Deskripsi
-Kode di atas berfungsi untuk menampilkan harga tiket sesuai kondisi dan juga menampilkan total semua harga tiket yang telah di beli. Di dalam kode ini juga kita bisa mengatur seberapa banyak tiket yang ingin kita pesan.
-##### Catatan: Aku sedikit mengubah tampilan/output namun tidak mengubah fungsi nya sama sekali. Ini aku lakukan untuk memperjelas fungsi kode dan output nya.
+Kode di atas berfungsi untuk mengecek apakah di dalam suatu kalimat apakah ada huruf vokal `a, i, u, e, o` dan menghitung jumlah huruf vokal nya
 
 ## Unguided
 ### 1. Buatlah program dalam bahasa Go untuk menampilkan seluruh faktor dari sebuah bilangan bulat positif n, kemudian menentukan apakah n merupakan bilangan prima atau bukan
@@ -158,34 +103,79 @@ package main
 
 import "fmt"
 
-func main (){
-	var n, hasil int // var n dan hasil
-	var count int // var pendeteksi
+func main(){
+	var opsi int
+	var done bool = false
+	pw := 1234
+	uang := 10000000
+	try := 3
+	
 
-	fmt.Println("====== Bilaangan Prima ======")
-	i := 1
-	fmt.Print("Bilangan: ")
-	fmt.Scan(&n) //input
-	limit := n
+	fmt.Println("====== Masukan Pasword ======")
 
-	fmt.Print("Faktor: ")
-	for { // perulangan 1
-		hasil = n % i
-		if hasil == 0 { // jika n == 0
-			fmt.Print(i," ")
-			count += 1
-		}
-		i += 1
-		if i > limit { // break
+	//loop utama
+	for {
+		if done {
 			break
 		}
-	}
+		ins_pw := 0000
+		fmt.Print("Pasaword: ")
+		fmt.Scan(&ins_pw)
 
-	fmt.Print("\nPrima: ")
-	if count < 3 {
-		fmt.Print("true") // jika prima maka hanya mengitung dua angka
-	} else {
-		fmt.Print("False") // jika tidak dia akan menghitung lebih dari dua
+		//jika pw salah
+		if ins_pw != pw {
+			fmt.Println("Pasword yang anda masukan salah")
+			try = try - 1
+			
+			//jika jumlah percobaan mencapai max
+			if try == 0{
+				fmt.Println("Maaf ATM Anda Terkunci")
+				break
+			}
+
+			//jika atm berhasil
+		} else {
+			fmt.Println("Login Berhasil")
+
+			//loop jika berhasil
+			for {
+				opsi = 0
+				tarik := 0
+				fmt.Println("\n====== Bank ATM ======")
+				fmt.Println("1. Lihat Saldo")
+				fmt.Println("2. Tarik Uang")
+				fmt.Println("3. Keluar")
+				fmt.Print("Opsi: ")
+				fmt.Scan(&opsi)
+
+				//opsi 1
+				if opsi == 1 {
+					fmt.Println("Saldo: Rp", uang)
+
+				//opsi 2
+				} else if opsi == 2 {
+					fmt.Print("Jumlah Uang: ")
+					fmt.Scan(&tarik)
+					if tarik > uang {
+						fmt.Println("Saldo anda tidak mencukupi")
+					} else if tarik <= 0 {
+						fmt.Println("Jumlah Tidak Valid")
+					} else {
+						uang = uang - tarik
+						fmt.Println("Saldo Anda: Rp",uang)
+					}
+				
+				//opsi 3
+				} else if opsi == 3{
+					done = true
+					break
+
+				//opsi lain nya
+				} else {
+					fmt.Println("Opsi tidak valid")
+				}
+			}
+		}
 	}
 }
 ```
@@ -194,72 +184,6 @@ func main (){
 
 #### Deskripsi
 Kode di atas berfungsi untuk menampilkan berapa banyak bilangan yang bisa di bagi dengan bilangan yang telah kita masukan. jika bilangan yang di masukan hanya bisa di bagi oleh dua bilangan berarti bilangan prima. Jika tidak maka bukan bilangan prima.
-
-### 2. Buatlah program dalam bahasa Go untuk menentukan apakah setiap mahasiswa baru Tel-U dalam satu kelompok bisa mendapat sertifikat ECCT atau tidak.
-
-```go
-package main
-
-import "fmt"
-
-func main(){
-
-	var siswa int // var mengatur banyak siwswa
-	fmt.Println("====== ECCT Siswa ======")
-	fmt.Print("Jumlah Siswa: ")
-	fmt.Scan(&siswa) // input
-	loop := 0 // var loop
-	var  P, V, GA, FS, CI, TC, ratarata float32 //untuk nilai
-	count := 1
-	countlulus := 0 // menghitung siswa lulus
-
-	for { // loop
-		fmt.Println("====== Nilai Siswa ======")
-		fmt.Println("Siswa: ", count)
-		fmt.Print("Nilai P: ")
-		fmt.Scan(&P)
-
-		fmt.Print("Nilai V: ")
-		fmt.Scan(&V)
-
-		fmt.Print("Nilai GA: ")
-		fmt.Scan(&GA)
-
-		fmt.Print("Nilai FS: ")
-		fmt.Scan(&FS)
-
-		fmt.Print("Nilai CI: ")
-		fmt.Scan(&CI)
-
-		fmt.Print("Nilai TC: ")
-		fmt.Scan(&TC)
-
-		ratarata = (P + V + GA + FS + CI + TC)/6
-
-		fmt.Println("Nilai Minimal Rata-Rata: 3,33")
-		fmt.Println("Rata-Rata: ", ratarata)
-
-		if ratarata >= 3.33 {
-			fmt.Println("Status: Ya") // jika di atas rata rata
-			countlulus += 1
-		} else {
-			fmt.Println("Lulus: Tidak") // jika tidak
-		}
-		
-		loop += 1
-		if loop == siswa{
-			break
-		}
-	}
-	fmt.Print("Sisiwa Yang Lulus: ",countlulus)
-}
-```
-
-##### Output
-![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/05-perulangan-for-loop/unguided/2-ect/z.output.png?raw=true)
-
-#### Deskripsi
-Kode di atas berfungsi untuk menentukan apakah seorang mahasiswa siswa atau beberapa mahasiswa mendapatkan sertifikan ECCT atau tidak dengan cara mencari nilai rata-rata dari hasil test nya. Apabila nilai rata-rata di atas atau setidaknya 3.33, maka mahasiswa di nyatakan lulus test. Kode juga menampilkan berapa banyak mahasiswa yang lulus di dalam tes tersebut. 
 
 ## Referensi
 1. *A Tour Of Go*. Diakses pada 18 Oktober 2026 melalui https://go.dev/tour/flowcontrol/1
