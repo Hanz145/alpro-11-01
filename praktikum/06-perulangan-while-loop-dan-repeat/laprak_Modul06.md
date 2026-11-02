@@ -3,14 +3,11 @@
 
 ## Dasar Teori
 
-### A. Loop Di Dalam Go
-Go hanya memiliki `for` loop yang berarti Go tidak memiliki `while` loop seperti bahasa pemrograman C++. Tidak seperti bahasa lain seperti C, Java, atau JavaScript, tidak ada tanda kurung yang mengapit ketiga komponen pernyataan tersebut fordan tanda kurung kurawal `{ }` selalu diperlukan. Loop Dalam Bahasa Go memiliki tiga komponen penting.
-#### 1. **Inisialisasi**
-adalah komponen yang di eksekusi sekali sebelum perulangan. Berfungsi untuk menghitung dan mengatur perulangan.
-#### 2. **Kondisi**
-adalah ekspresi boolean yang dievaluasi sebelum setiap perulangan dimulai. Berfungsi untuk menentukan apakah perulangan harus di lanjutkan atau di hentikan.
-#### 3. **Post statment**
-adalah pernyataan yang dieksekusi di akhir setiap iterasi. Berfungsi untuk mengubah suatu variabel dan menampilkan output.
+### A. While Loop
+Di dalam go tidak ada `while` namun kita bisa menggunakan `for(kondisi)` untuk melakukan while loop di dalam golang.
+
+### B. Kondisi Berhenti dan Penelusuran String
+Perulangan while biasanya dihentikan lewat nilai tertentu, batas percobaan, atau pilihan keluar di menu. Kalau datanya string, tiap karakter bisa dicek pakai indeks `kalimat[i]`, dan panjangnya didapat dari `len(kalimat)`
 
 <!-- Tambahkan poin A, B, C, ... atau sub-topik 1, 2, 3, ... sesuai kebutuhan modul -->
 
@@ -180,12 +177,11 @@ func main(){
 }
 ```
 ##### Output
-![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/05-perulangan-for-loop/unguided/1-prima/z.output.png?raw=true)
+![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/06-perulangan-while-loop-dan-repeat/unguided/bank/z.%20output.png?raw=true)
 
 #### Deskripsi
-Kode di atas berfungsi untuk menampilkan berapa banyak bilangan yang bisa di bagi dengan bilangan yang telah kita masukan. jika bilangan yang di masukan hanya bisa di bagi oleh dua bilangan berarti bilangan prima. Jika tidak maka bukan bilangan prima.
+Program ini adalah simulasi mesin Anjungan Tunai Mandiri (ATM). Program ini mensimulasikan proses autentikasi pengguna melalui password, pembatasan jumlah percobaan login yang salah (keamanan akun terkunci), serta menu transaksi perbankan dasar seperti pengecekan saldo dan penarikan tunai.
 
 ## Referensi
-1. *A Tour Of Go*. Diakses pada 18 Oktober 2026 melalui https://go.dev/tour/flowcontrol/1
-2. *GitHub*. Diakses pada 18 Oktober 2026 melalui https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/05-perulangan-for-loop/tp/Soal-No1/fungsi-utama-struktur-for.md
+1. The Go Authors. (2024). The Go Programming Language Specification. Diakses melalui https://go.dev/ref/spec
 <!-- Tambahkan nomor referensi berikutnya sesuai kebutuhan -->
