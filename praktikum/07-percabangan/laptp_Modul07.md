@@ -1,4 +1,4 @@
-# <h1 align="center">Tugas Pendahuluan Modul 06 - Perulangan-While-Loop-dan-Repeat</h1>
+# <h1 align="center">Tugas Pendahuluan Modul 07 - Percabangan</h1>
 <p align="center">Reihan - 109092600002</p>
 
 ### 1. bilangan.go
@@ -33,11 +33,11 @@ func main() {
 
 ##### Output
 <!-- Path relatif dari readme.md ke folder unguided/[nama_soal]/output.png, contoh: -->
-![alt text](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/06-perulangan-while-loop-dan-repeat/tp/1.%20lulus/z.output.png?raw=true)
+![alt text](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/07-percabangan/tp/2.%20bilangan/z.%20output.png?raw=true)
 
 
 #### Deskripsi
-Menentukan apakah mahasiswa lulus atau tidak dan menghitung berapa banyak mahasiswa yang lulus sesuai banyak nya mahasiswa yang di masukan.
+Program di atas menentukan bilangan (genap/ganjil) dan positif atau negatif. Angka 0 dicek di awal dan dicetak "Nol". Untuk angka lain, `n mod 2 = 0` menentukan genap atau ganjil, dan `n > 0` menentukan apakah biangan positif atau negatif.
 
 ### 2. hari.go
 ```go
@@ -70,11 +70,11 @@ func main() {
 
 ##### Output
 <!-- Path relatif dari readme.md ke folder unguided/[nama_soal]/output.png, contoh: -->
-![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/06-perulangan-while-loop-dan-repeat/tp/2.%20deret/z.output.png?raw=true)
+![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/07-percabangan/tp/3.%20hari/z.%20output.png?raw=true)
 
 
 #### Deskripsi
-Menambahkan bilangan dari `1` sampai `n` (bilangan yang di input)
+Program di atas mengubah hari (1 sampai 7) menjadi nama hari memakai `case switch`. Nomor selain itu masuk ke default dan mencetak "Hari tidak valid".
 
 ### 3. terbesar.go
 ```go
@@ -98,11 +98,11 @@ func main() {
 
 ##### Output
 <!-- Path relatif dari readme.md ke folder unguided/[nama_soal]/output.png, contoh: -->
-![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/06-perulangan-while-loop-dan-repeat/tp/3.%20dua-terendah/z.output.png?raw=true)
+![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/07-percabangan/tp/4.%20terbesar/z.%20output.png?raw=true)
 
 
 #### Deskripsi
-Program di atas membantu mencari dua mahasiswa dengan nilai terendah dari banyak nya mahasiswa yang di input.
+Program di atas mencari bilangan terbesar dari tiga bilangan menggunakan if - else if - else. Tanda >= dipakai supaya kasus ada dua bilangan tertinggi yang sama tetap benar.
 
 ## Kesimpulan
-Tujuan tugas pendahuluan minggu ini yaitu supaya mahasiswa yahu cara menggunakan perulangan while loop dan repeat until.
+Percabangan dipakai supaya program bisa memilih jalur sesuai kondisi. if - else if cocok untuk kondisi berupa perbandingan atau rentang, sedangkan switch lebih rapi kalau yang dicek adalah nilai tertentu seperti nomor hari. Di Go, switch tidak butuh break karena otomatis berhenti setelah satu case cocok.
