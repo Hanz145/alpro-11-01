@@ -209,7 +209,7 @@ func main() {
 }
 ```
 ##### Output
-![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/06-perulangan-while-loop-dan-repeat/unguided/bank/z.%20output.png?raw=true)
+![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/07-percabangan/unguided/1.%20besok/z.%20output.png?raw=true)
 
 #### Deskripsi
 Program ini adalah berfungsi untuk mengecek apakah tanggal yang dimasukan adalah vallid atau tidak
@@ -254,7 +254,7 @@ func main() {
 }
 ```
 ##### Output
-![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/06-perulangan-while-loop-dan-repeat/unguided/bank/z.%20output.png?raw=true)
+![Screenshot Output Unguided](https://github.com/Hanz145/alpro-11-01/blob/main/praktikum/07-percabangan/unguided/2.%20kereta/z.%20output.png?raw=true)
 
 #### Deskripsi
 Program ini berfungsi untuk memberikan harga tiket sesuai kriteria yang di inginkan penumpang.
